@@ -1,0 +1,890 @@
+[
+  {
+    "negotiationId": "1880b587-ac78-4047-908e-7477b0bc5291",
+    "messageId": "af5ffe8b-11a6-4639-b795-bb7f149eca46",
+    "body": "Subject: Load Efe54-c08-pr: Chicago, IL to Dallas, TX\n\nHi Cedar Line Transport,\n\nWe have a load available and thought it might fit your lanes.\n\nLoad Efe54-c08-pr | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:25 UTC\n\nOur offer:\n  linehaul: $1,985.51\n\nIf that works, reply to confirm and we will send the rate confirmation.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load Efe54-c08-pr",
+        "value": "Efe54-c08-pr",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:25 UTC",
+        "value": "2026-09-18T05:25:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "linehaul: $1,985.51",
+        "value": 198551,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "be60d213-3c59-47ea-85c8-67ffaf89239a",
+    "messageId": "166f4186-a411-4838-b7b2-9cc53d609016",
+    "body": "Subject: Load E7f60-t-9ab8: Chicago, IL to Dallas, TX\n\nHi Cedar Line Transport,\n\nWe have a load available and thought it might fit your lanes.\n\nLoad E7f60-t-9ab8 | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:21 UTC\n\nOur offer:\n  linehaul: $1,950.00\n\nIf that works, reply to confirm and we will send the rate confirmation.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load E7f60-t-9ab8",
+        "value": "E7f60-t-9ab8",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:21 UTC",
+        "value": "2026-09-18T05:21:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "linehaul: $1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "9799d9a8-1453-4dd7-b26d-79a9f07733a1",
+    "messageId": "1abb10f6-b0d9-4fb7-8752-040d7b374aa2",
+    "body": "Subject: Load Ea78b-t-2766: Chicago, IL to Dallas, TX\n\nHi Cedar Line Transport,\n\nWe have a load available and thought it might fit your lanes.\n\nLoad Ea78b-t-2766 | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:21 UTC\n\nOur offer:\n  linehaul: $1,950.00\n\nIf that works, reply to confirm and we will send the rate confirmation.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load Ea78b-t-2766",
+        "value": "Ea78b-t-2766",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:21 UTC",
+        "value": "2026-09-18T05:21:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "linehaul: $1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "b6c09552-8c49-4b9a-88ee-64917a363b44",
+    "messageId": "19a334d4-7fd8-4bb2-b240-24844068d4cf",
+    "body": "Subject: Load E9066-c08-pr: Chicago, IL to Dallas, TX\n\nHi Cedar Line Transport,\n\nWe have a load available and thought it might fit your lanes.\n\nLoad E9066-c08-pr | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:49 UTC\n\nOur offer:\n  linehaul: $1,985.51\n\nIf that works, reply to confirm and we will send the rate confirmation.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load E9066-c08-pr",
+        "value": "E9066-c08-pr",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:49 UTC",
+        "value": "2026-09-18T05:49:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "linehaul: $1,985.51",
+        "value": 198551,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "5e1d28cb-4eff-4c98-a49e-c937946c31a5",
+    "messageId": "c3b00797-7577-4a41-a038-1a1680a67735",
+    "body": "Subject: Load E3f88-t-b262: Chicago, IL to Dallas, TX\n\nHi Cedar Line Transport,\n\nWe have a load available and thought it might fit your lanes.\n\nLoad E3f88-t-b262 | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:20 UTC\n\nOur offer:\n  linehaul: $1,950.00\n\nIf that works, reply to confirm and we will send the rate confirmation.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load E3f88-t-b262",
+        "value": "E3f88-t-b262",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:20 UTC",
+        "value": "2026-09-18T05:20:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "linehaul: $1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "5e1d28cb-4eff-4c98-a49e-c937946c31a5",
+    "messageId": "1dd3644f-8220-4b4a-9f84-09c581a04882",
+    "body": "Subject: Agreed: Load E3f88-t-b262 at $1,950.00\n\nHi Cedar Line Transport,\n\nAgreed at the following terms:\n\n  linehaul: $1,950.00\n\nLoad E3f88-t-b262 | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:20 UTC\n\nWe are preparing the rate confirmation now.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "money",
+        "text": "linehaul: $1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      },
+      {
+        "kind": "load_id",
+        "text": "Load E3f88-t-b262",
+        "value": "E3f88-t-b262",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "pickup 2026-09-18 at 05:20 UTC",
+        "value": "2026-09-18T05:20:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "5e1d28cb-4eff-4c98-a49e-c937946c31a5",
+    "messageId": "bb8a64df-ff80-4cb7-9e89-34b0c5700b95",
+    "body": "Subject: Booked: Load E3f88-t-b262 (BK-cfd85df0)\n\nHi Cedar Line Transport,\n\nYou are booked. Reference BK-cfd85df0.\n\nLoad E3f88-t-b262 | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:20 UTC\n\nAgreed rate:\n  linehaul: $1,950.00\n\nPlease confirm driver and truck details before pickup.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load E3f88-t-b262",
+        "value": "E3f88-t-b262",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:20 UTC",
+        "value": "2026-09-18T05:20:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "$1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "89314ded-c8b3-4d7c-9148-9402989824d4",
+    "messageId": "7df9aea4-8c11-4ad4-b690-2e96300c63e2",
+    "body": "Subject: Load E6f6f-t-3f93: Chicago, IL to Dallas, TX\n\nHi Cedar Line Transport,\n\nWe have a load available and thought it might fit your lanes.\n\nLoad E6f6f-t-3f93 | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:20 UTC\n\nOur offer:\n  linehaul: $1,950.00\n\nIf that works, reply to confirm and we will send the rate confirmation.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load E6f6f-t-3f93",
+        "value": "E6f6f-t-3f93",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:20 UTC",
+        "value": "2026-09-18T05:20:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "linehaul: $1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "ab2df381-c6b4-4116-9e8d-873cb207cc1d",
+    "messageId": "b4178c80-4dc3-486b-be90-598aed8f2570",
+    "body": "Subject: Load E3b94-t-039b: Chicago, IL to Dallas, TX\n\nHi Cedar Line Transport,\n\nWe have a load available and thought it might fit your lanes.\n\nLoad E3b94-t-039b | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:20 UTC\n\nOur offer:\n  linehaul: $1,950.00\n\nIf that works, reply to confirm and we will send the rate confirmation.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load E3b94-t-039b",
+        "value": "E3b94-t-039b",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:20 UTC",
+        "value": "2026-09-18T05:20:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "linehaul: $1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "ab2df381-c6b4-4116-9e8d-873cb207cc1d",
+    "messageId": "04fc6b95-1cfc-47ee-b7b9-e6682de5afa9",
+    "body": "Subject: Agreed: Load E3b94-t-039b at $1,950.00\n\nHi Cedar Line Transport,\n\nAgreed at the following terms:\n\n  linehaul: $1,950.00\n\nLoad E3b94-t-039b | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:20 UTC\n\nWe are preparing the rate confirmation now.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "money",
+        "text": "linehaul: $1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      },
+      {
+        "kind": "load_id",
+        "text": "Load E3b94-t-039b",
+        "value": "E3b94-t-039b",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "pickup 2026-09-18 at 05:20 UTC",
+        "value": "2026-09-18T05:20:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "ab2df381-c6b4-4116-9e8d-873cb207cc1d",
+    "messageId": "59acf318-44f9-4498-8511-b001a1fd201f",
+    "body": "Subject: Booked: Load E3b94-t-039b (BK-3ccbd85a)\n\nHi Cedar Line Transport,\n\nYou are booked. Reference BK-3ccbd85a.\n\nLoad E3b94-t-039b | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:20 UTC\n\nAgreed rate:\n  linehaul: $1,950.00\n\nPlease confirm driver and truck details before pickup.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load E3b94-t-039b",
+        "value": "E3b94-t-039b",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:20 UTC",
+        "value": "2026-09-18T05:20:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "$1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  },
+  {
+    "negotiationId": "d1279981-7df3-445f-b2b7-f5eb2ce0c06e",
+    "messageId": "389a5f79-dc17-457f-8832-961e50d9823a",
+    "body": "Subject: Load E2d90-t-7d64: Chicago, IL to Dallas, TX\n\nHi Cedar Line Transport,\n\nWe have a load available and thought it might fit your lanes.\n\nLoad E2d90-t-7d64 | Chicago, IL to Dallas, TX | dry van | 42,000 lbs | general freight | pickup 2026-09-18 at 05:18 UTC\n\nOur offer:\n  linehaul: $1,950.00\n\nIf that works, reply to confirm and we will send the rate confirmation.\n\nCoverage Desk",
+    "supported": 8,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "claims": [
+      {
+        "kind": "load_id",
+        "text": "Load E2d90-t-7d64",
+        "value": "E2d90-t-7d64",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "origin",
+        "text": "Chicago, IL",
+        "value": "Chicago, IL",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "destination",
+        "text": "Dallas, TX",
+        "value": "Dallas, TX",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "equipment",
+        "text": "dry van",
+        "value": "dry van",
+        "verdict": "supported",
+        "reason": "matches the load's equipment",
+        "label": null
+      },
+      {
+        "kind": "weight",
+        "text": "42,000 lbs",
+        "value": 42000,
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "commodity",
+        "text": "general freight",
+        "value": "general freight",
+        "verdict": "supported",
+        "reason": "matches the load record",
+        "label": null
+      },
+      {
+        "kind": "pickup",
+        "text": "2026-09-18 at 05:18 UTC",
+        "value": "2026-09-18T05:18:00Z",
+        "verdict": "supported",
+        "reason": "matches the load's pickup time",
+        "label": null
+      },
+      {
+        "kind": "money",
+        "text": "linehaul: $1,950.00",
+        "value": 195000,
+        "verdict": "supported",
+        "reason": "matches an amount the policy engine approved",
+        "label": null
+      }
+    ]
+  }
+]
