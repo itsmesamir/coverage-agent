@@ -1,0 +1,95 @@
+# The regression gate.
+#
+# Deliberately needs no API key and makes no model calls. The eval corpus is
+# committed (evals/fixtures/traces.json) and re-scored here, which is what
+# invariant 5 -- traces persisted raw, re-scorable with zero LLM calls -- was
+# for. A gate that needed a metered key would be a gate that got disabled the
+# first week quota ran out, and one that called a model would fail on the
+# model's nondeterminism rather than on a code change.
+#
+# Generating fresh traces is a deliberate, local act (`pnpm eval`), not
+# something a pull request pays for.
+
+name: eval
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        # pgvector, not plain postgres: the schema declares a vector column and
+        # the migration creates the extension.
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: coverage
+          POSTGRES_PASSWORD: coverage
+          POSTGRES_DB: coverage_agent
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U coverage -d coverage_agent"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 20
+
+    env:
+      DATABASE_URL: postgresql://coverage:coverage@localhost:5432/coverage_agent
+      # No model is called, so no key is configured. If one leaks into the
+      # environment the tests still must not depend on it.
+      LLM_CACHE: "off"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # bge-small is ~130MB and is downloaded on first use. Cached, because
+      # the retrieval tests need real embeddings and re-downloading per run
+      # would dominate the job.
+      - name: Cache embedding model
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: transformers-${{ runner.os }}-bge-small-en-v1.5
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Lint and dependency boundaries
+        run: pnpm lint
+
+      - name: Apply migrations
+        run: pnpm db:migrate
+
+      - name: Seed
+        run: pnpm seed
+
+      # The retrieval tests query pgvector, which needs the embedding column
+      # populated. Without this they fail on an empty candidate set rather
+      # than on anything meaningful.
+      - name: Embed carrier profiles
+        run: pnpm embed
+
+      - name: Tests
+        run: pnpm test
+
+      # The thresholds from CLAUDE.md: any policy violation fails, a tool-call
+      # score more than 0.02 below baseline fails, a hallucination rate more
+      # than 0.01 above baseline fails.
+      - name: Eval regression check
+        run: pnpm eval:check
