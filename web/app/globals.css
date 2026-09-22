@@ -1,0 +1,293 @@
+/*
+ * Palette and type scale follow onepatch.dev: near-black ground, a single red
+ * accent, square corners, tight negative tracking, mono for labels and data.
+ *
+ * One deliberate departure. That site has no success state, so it needs only
+ * red. A dashboard reporting policy outcomes has to separate accepted from
+ * rejected at a glance, so green and amber are added in the same muted register.
+ */
+
+:root {
+  /* Grounds. #121212 is the site's dominant background; #0a0a0a is reserved
+     for inset wells (code blocks), the way the source uses it. */
+  --bg: #121212;
+  --bg-deep: #0a0a0a;
+  --panel: #161616;
+  --line: #232323;
+  --line-strong: #2f2f2f;
+
+  /* The maroon hero. On the source this is a full-height band; here it is the
+     header and each page's title block, so dense tables keep a dark ground. */
+  --hero: #782b26;
+  --hero-raised: #90332d;
+  --hero-line: #a83c35;
+
+  --fg: #f6f6f6;
+  --fg-body: #c5c5c5;
+  --fg-muted: #a0a0a0;
+  --fg-faint: #7b7b7b;
+  --fg-dim: #474747;
+
+  /* Red ramp, source order: deep -> primary -> tints. */
+  --accent: #f0554b;
+  --accent-mid: #c0443c;
+  --accent-dim: #a83c35;
+  --accent-deep: #782b26;
+  --accent-tint: #f58881;
+  --accent-pale: #f8aaa5;
+
+  --ok: #4ba585;
+  --ok-dim: #2b5f4d;
+  --warn: #c9973f;
+  --warn-dim: #6b5222;
+
+  --track: -0.02em;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--bg); }
+
+body {
+  margin: 0;
+  color: var(--fg-body);
+  background: var(--bg);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  letter-spacing: var(--track);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--line-strong); }
+a:hover { color: var(--accent); border-bottom-color: var(--accent-dim); }
+
+/* ---------- chrome ---------- */
+
+header.top {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--hero);
+  border-bottom: 1px solid var(--hero-line);
+  padding: 14px 32px;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+header.top .brand {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: var(--fg);
+}
+header.top .brand::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--accent-pale);
+  margin-right: 9px;
+  vertical-align: middle;
+}
+
+header.top nav { display: flex; gap: 22px; }
+header.top nav a {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-pale);
+  border-bottom: none;
+}
+header.top nav a:hover { color: #fff; }
+
+header.top .thesis {
+  margin-left: auto;
+  color: var(--accent-tint);
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+main { padding: 0 32px 96px; max-width: 1180px; }
+
+/* Page hero: full-bleed maroon band carrying the title, echoing the source
+   site's 100vh hero without spending a screen on it. */
+.hero {
+  background: var(--hero);
+  border-bottom: 1px solid var(--hero-line);
+  margin: 0 -32px 40px;
+  padding: 36px 32px 32px;
+}
+.hero h1 { color: #fff; }
+.hero .sub { color: var(--accent-pale); margin: 0; }
+.hero .sub a { color: #fff; border-bottom-color: var(--accent-dim); }
+.hero .sub a:hover { color: var(--accent-pale); border-bottom-color: var(--accent-pale); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  color: var(--fg);
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--fg-muted);
+  margin: 44px 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+/* Section counters render as [01], matching the source site's editorial style. */
+h2 .idx { color: var(--accent); margin-right: 8px; }
+
+.sub { color: var(--fg-muted); margin: 0 0 28px; font-size: 13px; }
+
+/* ---------- tables ---------- */
+
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+
+th {
+  font-family: var(--font-mono), monospace;
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--fg-faint);
+  text-align: left;
+  padding: 0 14px 9px;
+  border-bottom: 1px solid var(--line);
+}
+
+td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  color: var(--fg-body);
+}
+tbody tr:hover td { background: var(--bg-raised); }
+
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+code, .mono {
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+code { color: var(--fg); }
+
+/* ---------- fact grid ---------- */
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin: 0;
+}
+.facts > div { background: var(--panel); padding: 13px 15px; }
+.facts dt {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--fg-faint);
+  margin: 0 0 5px;
+}
+.facts dd {
+  margin: 0;
+  color: var(--fg);
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- tags ---------- */
+
+.tag {
+  display: inline-block;
+  padding: 2px 7px;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fg-muted);
+  background: var(--bg-raised);
+}
+.tag.ok   { color: var(--ok);     border-color: var(--ok-dim); }
+.tag.bad  { color: var(--accent); border-color: var(--accent-deep); }
+.tag.warn { color: var(--warn);   border-color: var(--warn-dim); }
+
+/* ---------- transcript ---------- */
+
+.msg {
+  border: 1px solid var(--line);
+  border-left-width: 2px;
+  background: var(--panel);
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  font-size: 13px;
+  color: var(--fg-body);
+}
+.msg.outbound { border-left-color: var(--accent); }
+.msg.inbound  { border-left-color: var(--line-strong); background: var(--bg-raised); }
+.msg .meta {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--fg-faint);
+  margin-bottom: 10px;
+  white-space: normal;
+}
+
+/* ---------- spans ---------- */
+
+.span { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+.span .bar { height: 6px; background: var(--accent-dim); min-width: 2px; }
+.span .bar.rejected { background: var(--accent); }
+.span .bar.llm { background: var(--line-strong); }
+
+details.args summary {
+  cursor: pointer;
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  color: var(--fg-faint);
+  list-style: none;
+}
+details.args summary::before { content: "+ "; color: var(--accent-dim); }
+details[open].args summary::before { content: "− "; }
+details.args summary:hover { color: var(--fg-muted); }
+details.args pre {
+  background: var(--bg-deep);
+  border: 1px solid var(--line);
+  padding: 10px;
+  overflow-x: auto;
+  font-size: 11px;
+  color: var(--fg-muted);
+  margin: 6px 0 8px;
+}
+
+.empty {
+  color: var(--fg-muted);
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 22px;
+  font-size: 13px;
+}
