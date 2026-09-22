@@ -1,0 +1,17 @@
+{
+  "recordedAt": "2026-09-17T07:46:34.945Z",
+  "gitSha": "c12f52179f1ada0879e91c52bf0aae902c4cdd4f",
+  "provider": "gemini",
+  "model": "gemini-3.6-flash",
+  "promptVersion": "v1",
+  "corpus": {
+    "traces": 16,
+    "decisionsChecked": 23,
+    "messagesWithClaims": 23
+  },
+  "metrics": {
+    "policyViolations": 0,
+    "meanToolCallScore": 1,
+    "hallucinationRate": 0
+  }
+}
