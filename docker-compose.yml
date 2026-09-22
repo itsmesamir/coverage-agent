@@ -1,0 +1,33 @@
+# Reproducible services for CI and for anyone cloning this repo.
+# Host ports are shifted off the defaults so this never collides with a local
+# Postgres/Redis already listening on 5432/6379. Local dev may point .env at
+# either instance; .env is the single source of truth for the connection string.
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: coverage
+      POSTGRES_PASSWORD: coverage
+      POSTGRES_DB: coverage_agent
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U coverage -d coverage_agent"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6380:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  pgdata:

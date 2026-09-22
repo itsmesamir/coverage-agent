@@ -1,0 +1,61 @@
+{
+  "name": "coverage-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Freight load-coverage negotiation agent. LLM proposes, deterministic systems decide.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit false --outDir dist",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . && depcruise --config .dependency-cruiser.cjs api seed",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx api/app/db/migrate.ts",
+    "seed": "tsx seed/load.ts",
+    "embed": "tsx api/app/retrieval/backfill.ts",
+    "eval:retrieval": "tsx evals/retrieval-report.mts",
+    "negotiate": "tsx evals/one-negotiation.mts",
+    "persona": "tsx evals/run-persona.mts",
+    "eval:replay": "tsx evals/replay-report.mts",
+    "eval": "tsx evals/run-suite.mts",
+    "eval:small": "tsx evals/run-suite.mts --small",
+    "eval:hallucination": "tsx evals/hallucination-report.mts",
+    "eval:evaluator": "tsx evals/evaluator-report.mts",
+    "eval:export": "tsx evals/export-fixture.mts",
+    "eval:check": "tsx evals/check.mts",
+    "eval:prove-gate": "tsx evals/prove-gate.mts",
+    "web": "next dev web",
+    "web:build": "next build web",
+    "web:typecheck": "tsc -p web/tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^2.22.0",
+    "@huggingface/transformers": "^4.3.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.36.4",
+    "next": "^16.3.5",
+    "pgvector": "^0.2.0",
+    "postgres": "^3.4.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "dependency-cruiser": "^16.9.0",
+    "drizzle-kit": "^0.28.1",
+    "eslint": "^9.17.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vitest": "^2.1.8"
+  }
+}
