@@ -1,0 +1,2 @@
+ALTER TABLE "negotiations" ADD COLUMN "last_offer_linehaul_cents" integer;--> statement-breakpoint
+ALTER TABLE "negotiations" ADD COLUMN "approved_accessorials" varchar(24)[] DEFAULT '{}'::varchar[] NOT NULL;
